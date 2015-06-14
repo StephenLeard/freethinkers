@@ -1,2 +1,2 @@
 # Freethinkers Brewing
-[Ray's site](http://stephenleard.github.io/freethinkers/)
+<a href="http://stephenleard.github.io/freethinkers/" target="_blank">Ray's site</a>
