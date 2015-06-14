@@ -1,2 +1,2 @@
 # Freethinkers Brewing
-Ray's site
+[Ray's site](http://stephenleard.github.io/freethinkers/)
