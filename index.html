@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Freethinkers</title>
+	<title>Long Live the Craft</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link href='http://fonts.googleapis.com/css?family=Signika:300,600|Sanchez' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
@@ -15,6 +15,9 @@
 			}
 			h1, h2, h3, p, ul, li,a {
 				font-family: 'Sanchez', serif;
+			}
+			h1, h2, h3, p {
+				margin-left: 15px;
 			}
 			h1,h2 {
 				color: #FFCC01;
@@ -42,14 +45,16 @@
 			}
 			#products {
 				background: url(https://cloud.githubusercontent.com/assets/4176055/8398925/2a0ad83a-1dc8-11e5-8b71-e1182b8ac2c8.jpg) no-repeat center center fixed; 
-			}										
-			#banner > img {
+			}
+			#banner > img#logo {
 				margin-left: 30%;
 				margin-right: 30%;
-				margin-top: 200px;
+				margin-top: 100px;
+				width: 400px;
+				height: 400px;
+				position: absolute;
 			}
 			#banner > div {
-				background-color: rbga(34,34,34,0.7);
 				width: 400px;
 				height: 400px;
 			}
@@ -88,12 +93,13 @@
 			}
 			#map {
 				height: 350px;
+				margin-right: auto;
+				margin-left: auto;
 				width: 65%;
-				margin-left: 125px;
+				/*margin-left: 125px;*/
 			}
 			.first, .then {
 				display: inline-block;
-				flex-wrap: wrap;
 			}
 			.fullscreen,
 			.content-a {
@@ -112,7 +118,7 @@
 			}
 			.content-b {
 				display:table-cell;
-			    	position:relative;
+			    position:relative;
 				vertical-align:middle;
 				text-align:center;
 				vertical-align: center;
@@ -122,16 +128,28 @@
 				display: inline;
 			}
 			.process-card {
-				height: 200px;
-				width: 200px;
+			    float:left;
+			    width: 250px;
 				background: #007C85; 
 				text-align: center;
-				margin-top: 25px;
+				vertical-align: middle;
+				line-height: 200px;
+				margin: 0;
+				padding: 0;
+				border: 1px solid #4c2b07;
 			}
+			.process-card.then {
+				background: #ffcc01;
+			}
+/*			.then > h2{
+				text-align:right;
+			}*/
 		</style>
 		<section id="banner" class="fullscreen background parallax" data-img-width="1600" data-img-height="1064" data-diff="100">
-			<img src="https://cloud.githubusercontent.com/assets/4176055/8398930/2a1519d0-1dc8-11e5-8576-d23adca52750.png" alt="Freethinkers Brewing">
-			<div><img src="https://cloud.githubusercontent.com/assets/4176055/8399664/40e9867c-1dd8-11e5-84bb-abea488ee6c7.png" alt="Freethinkers Brewing"></div>
+			<img id="logo" src="https://cloud.githubusercontent.com/assets/4176055/8398930/2a1519d0-1dc8-11e5-8576-d23adca52750.png" alt="Freethinkers Brewing">
+			<div>
+				<img id="bg" src="https://cloud.githubusercontent.com/assets/4176055/8399664/40e9867c-1dd8-11e5-84bb-abea488ee6c7.png" alt="Freethinkers Brewing">
+			</div>
 		</section>
 		<section id="intro" class="fullscreen background parallax" data-img-width="1600" data-img-height="1064" data-diff="100">
 			<div class="content">
@@ -156,7 +174,7 @@
 						</ul>
 				</div>
 				<div class="first-then then">
-					<h2>...then we <span class="emphasis">jelly</span></h2>
+					<h2>...then we <span class="emphasis">jelly</span>.</h2>
 						<ul class="card">
 							<li><div class="process-card then" id="pectin">pectin</div></li>
 							<li><div class="process-card then" id="sugar">sugar</div></li>
@@ -197,13 +215,13 @@
 				</div>
 			</div>
 		</section>
-		<section id="contact" class="fullscreen background parallax" data-img-width="1600" data-img-height="1064" data-diff="100">
+		<section id="contact" class="fullscreen background parallax" data-img-width="1600" data-img-height="1064" data-diff="100" style="text-align:center;">
 			<div class="content">
-				<h2>Curious? Of course you are.</h2>
+				<h2><span class="dropletter">Curious?</span> Of course you are.</h2>
 				<p>Come find us and say hello. We're proudly county and support free samples.</p>
 				<p>We'll be selling at a <a href="https://hsmcdigshistory.org/BeerFest/events.html" target="_blank">local festival</a> or <a href="http://homegrownfarmmarket.webs.com/" target="_blank">farmers market</a> near you - hopefully you live near us.</p>
 				<div id="map"></div>
-				<p>If you don't, that's ok too - <a href="mailto:FreeThinkersBrew@gmail.com">drop us a line</a> to get notified when we start selling online.</p>
+				<p>If you don't, <a href="mailto:FreeThinkersBrew@gmail.com">drop us a line</a> to get notified when we start selling online.</p>
 				<h2 style="text-align:center;"><span style="color:white;"> -- </span><a href src="#intro"><span class="emphasis">Beer</span> up </a><span style="color:white;">|</span> <span class="emphasis">Jelly</span> on<span style="color:white;"> -- </span></h2>
 			</div>
 		</section>
