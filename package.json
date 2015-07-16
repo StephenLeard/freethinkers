@@ -1,0 +1,30 @@
+{
+  "name": "freethinkers",
+  "version": "1.0.0",
+  "description": "Ray's website",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StephenLeard/freethinkers.git"
+  },
+  "keywords": [
+    "freethinkers",
+    "brew",
+    "jelly",
+    "craft"
+  ],
+  "author": "Stephen Leard",
+  "license": "ISC",
+  "homepage": "https://StephenLeard.github.io/freethinkers",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-if": "^1.2.5",
+    "gulp-minify-html": "^1.0.3",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.6",
+    "jquery": "^2.1.4"
+  }
+}
