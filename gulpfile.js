@@ -20,3 +20,47 @@ if (env === 'development') {
 	outputDir = 'pressd/pro';
 	sassStyle = 'compressed';
 }
+
+jsSourcs = [
+	'compd/scripts/jqloader.js',
+	'compd/scripts/TweenMax.min.js',
+	'compd/scripts/jquery.scrollmagic.min.js',
+	'compd/scripts/script.js'
+];
+
+sassSources = ['compd/sass/style.scss'];
+
+htmlSources = [outputDir + '*.html'];
+
+gulp.task('js',function(){
+	gulp.src(jsSources)
+			.pipe(concat('script.js'))
+			.pipe(browserify())
+			.on('error',gutil.log)
+			.pipe(gulpif(env === 'production',uglify()))
+			.pipe(gulp.dest(outputDir + 'js'))
+			.pipe(connect.reload())
+});
+
+gulp.task('compass',function(){
+	gulp.src(sassSources)
+			.pipe(compass({
+			sass: 'compd/sass',
+			css: outputDir + 'css',
+			image: outputDir + 'images',
+			style: sassStyle,
+			require: ['susy','breakpoint']
+	}))
+});
+
+gulp.task();
+
+gulp.task();
+
+gulp.task();
+
+gulp.task();
+
+
+
+
