@@ -1,10 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Title</title>
-</head>
-<body>
-	
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Long Live the Craft</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="icon" type="image/png" href="https://cloud.githubusercontent.com/assets/4176055/8714787/ac8f7f94-2b3e-11e5-8ebe-c43ddd375f58.png">
+		<link href='http://fonts.googleapis.com/css?family=Signika:300,600|Sanchez' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+		<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+	</head>
+	<body>
+		<style>
+			#map {
+				height: 350px;
+				margin-right: auto;
+				margin-left: auto;
+				width: 65%;
+				/*margin-left: 125px;*/
+			}
+		</style>
+		Freethinkers - those who form opinions on the basis of reason, independent of authority
+		Like two homebrewers pushing the limits of the craft beyond the medium itself.
+		Like Craft Beer Jelly
+		
+		First we brew
+		hops
+		malt
+		yeast
+		water
+		
+		...then we jelly
+		pectin
+		sugar
+		citric
+		magic
+		
+		With great beer...
+		Chocolate PB Porter
+		Citra Amber Ale
+		West Coast Red Ale
+		Black IPA
+		Oatmeal Stout
+		Coffee Oatmeal Stout
+		Imperial IPA
+		Pumpkin Stout
+
+		...comes great possibility
+		PBJs
+		Tacos
+		Jelly Rolls
+		Cheese trays
+		Doughnuts
+		Burgers
+		Pork Chops
+		Ice Cream
+
+		Curious? Of course you are.
+		Come find us and say hello. We're proudly county and support free samples.
+		We'll be selling at a local festival or farmers market near you.
+		
+		<div id="map"></div>
+		
+		If you're outside our area, let us know your favorite flavors and where to send your six-pack (and free koozie).
+
+		-- Beer up | Jelly on --
+
+		<script>
+			var map = L.map('map', {
+			    center: [38.187240, -76.434317],
+			    zoom: 9,
+			    scrollWheelZoom: false
+			});
+			var tiles = new L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.png').addTo(map);
+		</script>
+
+	</body>
 </html>
