@@ -27,10 +27,10 @@ if (env === 'development') {
 }
 
 jsSources = [
-	'comps/scripts/jqloader.js',
+	// 'comps/scripts/jqloader.js',
 	'comps/scripts/TweenMax.min.js',
-	'comps/scripts/jquery.scrollmagic.min.js',
-	'comps/scripts/script.js'
+	'comps/scripts/jquery.scrollmagic.min.js'
+	// 'comps/scripts/script.js'
 ];
 sassSources = ['comps/sass/style.scss'];
 htmlSources = [outputDir + '*.html'];
@@ -42,7 +42,7 @@ gulp.task('js',function(){
 		.on('error',gutil.log)
 		.pipe(gulpif(env === 'production', uglify()))
 		.pipe(gulp.dest(outputDir + 'js'))
-		.pipe(connect.reload());
+		.pipe(connect.reload())
 });
 
 gulp.task('compass',function(){
@@ -55,27 +55,32 @@ gulp.task('compass',function(){
 			require: ['susy','breakpoint']
 		})
 		.on('error',gutil.log))
-		.pipe(connect.reload());
+		.pipe(connect.reload())
 });
 
 gulp.task('watch',function(){
 	gulp.watch(jsSources,['js']);
-	gulp.watch(['comps/sass/*.scss','comps/sass/*/*.scss'],['compass']);
-	gulp.watch('pressd/devo/*.html',['html']);
+	// gulp.watch(['comps/sass/*.scss','comps/sass/*/*.scss'],['compass']);
+	// gulp.watch('pressd/devo/*.html',['html']);
 });
 
 gulp.task('connect',function(){
 	connect.server({
 		root: outputDir,
 		livereload: true
-	});
+	})
 });
 
 gulp.task('html',function(){
 	gulp.src('pressd/devo/*.html')
-		.pipe(gulpif(env === 'pro', minifyHTML()))
-		.pipe(gulpif(env === 'pro', gulp.dest(outputDir)))
-		.pipe(connect.reload());
+		.pipe(gulpif(env === 'production', minifyHTML()))
+		.pipe(gulpif(env === 'production', gulp.dest(outputDir)))
+		.pipe(connect.reload())
 });
 
-gulp.task('default',['watch','html','js','compass','move','connect']);
+gulp.task('default',
+	['watch',
+	 // 'html',
+	 // 'js',
+	 // 'compass',
+	 'connect']);

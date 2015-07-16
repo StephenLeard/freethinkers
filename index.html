@@ -229,7 +229,8 @@
 		<script>
 			var map = L.map('map', {
 			    center: [38.187240, -76.434317],
-			    zoom: 9
+			    zoom: 9,
+			    scrollWheelZoom: false
 			});
 			var tiles = new L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.png').addTo(map);
 		</script>
