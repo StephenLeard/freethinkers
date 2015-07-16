@@ -70,7 +70,7 @@ gulp.task('connect',function(){
 });
 
 gulp.task('html',function(){
-	gulp.src(pressd/devo.*.html)
+	gulp.src('pressd/devo/*.html')
 			.pipe(gulpif(env === 'production', minifyHTML()))
 			.pipe(gulpif(env === 'production', gulp.dest(outputDir)))
 			.pipe(connect.reload)
