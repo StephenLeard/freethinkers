@@ -142,15 +142,9 @@
 			.process-card.then {
 				background: #ffcc01;
 			}
-/*			.then > h2{
-				text-align:right;
-			}*/
 		</style>
 		<section id="banner" class="fullscreen background parallax" data-img-width="1600" data-img-height="1064" data-diff="100">
 			<img id="logo" src="https://cloud.githubusercontent.com/assets/4176055/8398930/2a1519d0-1dc8-11e5-8576-d23adca52750.png" alt="Freethinkers Brewing">
-			<div>
-<!-- 				<img id="bg" src="https://cloud.githubusercontent.com/assets/4176055/8399664/40e9867c-1dd8-11e5-84bb-abea488ee6c7.png" alt="Freethinkers Brewing"> -->
-			</div>
 		</section>
 		<section id="intro" class="fullscreen background parallax" data-img-width="1600" data-img-height="1064" data-diff="100">
 			<div class="content">
@@ -167,20 +161,42 @@
 					<h2>First we <span class="emphasis">brew</span>...</h2>
 						<ul class="card">
 							<li>
-								<div id="hops" class="process-card first">hops</div>
+								<div id="hops" class="process-card first front">hops</div>
+								<div id="hops" class="process-card first back">hops</div>
 							</li>
-							<li><div id="malt" class="process-card first">malt</div></li>
-							<li><div id="yeast" class="process-card first">yeast</div></li>
-							<li><div id="water" class="process-card first">water</div></li>
+							<li>
+								<div id="malt" class="process-card first front">malt</div>
+								<div id="malt" class="process-card first back">malt</div>
+							</li>
+							<li>
+								<div id="yeast" class="process-card first front">yeast</div>
+								<div id="yeast" class="process-card first back">yeast</div>
+							</li>
+							<li>
+								<div id="water" class="process-card first front">water</div>
+								<div id="water" class="process-card first back">water</div>
+							</li>
 						</ul>
 				</div>
 				<div class="first-then then">
 					<h2>...then we <span class="emphasis">jelly</span>.</h2>
 						<ul class="card">
-							<li><div class="process-card then" id="pectin">pectin</div></li>
-							<li><div class="process-card then" id="sugar">sugar</div></li>
-							<li><div class="process-card then" id="citric">citric</div></li>
-							<li><div class="process-card then" id="magic">magic</div></li>
+							<li>
+								<div class="process-card then front" id="pectin">pectin</div>
+								<div class="process-card then back" id="pectin">pectin</div>
+							</li>
+							<li>
+								<div class="process-card then front" id="sugar">sugar</div>
+								<div class="process-card then back" id="sugar">sugar</div>
+							</li>
+							<li>
+								<div class="process-card then front" id="citric">citric</div>
+								<div class="process-card then back" id="citric">citric</div>
+							</li>
+							<li>
+								<div class="process-card then front" id="magic">magic</div>
+								<div class="process-card then back" id="magic">magic</div>
+							</li>
 						</ul>
 				</div>
 			</div>
@@ -190,28 +206,92 @@
 				<div class="first-then first">
 					<h2>With great <span class="emphasis">beer</span>...</h2>
 					<ul class="card">
-						<li><div class="process-card" id="ChocolatePBPorter">Chocolate PB Porter</div></li>
-						<li><div class="process-card" id="CitraAmberAle">Citra Amber Ale</div></li>
-						<li><div class="process-card" id="WestCoastRedAle">West Coast Red Ale</div></li>
-						<li><div class="process-card" id="BlackIPA">Black IPA</div></li>
-						<li><div class="process-card" id="OatmealStout">Oatmeal Stout</div></li>
-						<li><div class="process-card" id="CoffeeOatmealStout">Coffee Oatmeal Stout</div></li>
-						<li><div class="process-card" id="ImperialIPA">Imperial IPA</div></li>
-						<li><div class="process-card" id="PumpkinStout">Pumpkin Stout</div></li>
+						<li>
+							<div class="process-card">
+								<div class="front" id="ChocolatePBPorter">Chocolate PB Porter</div>
+								<div class="back" id="ChocolatePBPorter"><img src="" alt=""></div>
+							</div>
+						</li>
+						<li>
+							<div class="process-card">
+								<div class="front" id="CitraAmberAle">Citra Amber Ale</div>
+								<div class="process-card back" id="CitraAmberAle"><img src="" alt=""></div>
+							</div>
+						</li>
+						<li>
+							<div class="process-card">
+								<div class="front" id="WestCoastRedAle">West Coast Red Ale</div>
+								<div class="process-card back" id="WestCoastRedAle"><img src="" alt=""></div>
+							</div>
+						</li>
+						<li>
+							<div class="process-card">
+								<div class="front" id="BlackIPA">Black IPA</div>
+								<div class="back" id="BlackIPA"><img src="" alt=""></div>
+							</div>
+						</li>
+						<li>
+							<div class="process-card">
+								<div class="front" id="OatmealStout">Oatmeal Stout</div>
+								<div class="back" id="OatmealStout"><img src="" alt=""></div>
+							</div>
+						</li>
+						<li>
+							<div class="process-card">
+								<div class="front" id="CoffeeOatmealStout">Coffee Oatmeal Stout</div>
+								<div class="back" id="CoffeeOatmealStout"><img src="" alt=""></div>
+							</div>
+						</li>
+						<li>
+							<div class="process-card">
+								<div class="front" id="ImperialIPA">Imperial IPA</div>
+								<div class="back" id="ImperialIPA"><img src="" alt=""></div>
+							</div>
+						</li>
+						<li>
+							<div class="process-card">
+								<div class="front" id="PumpkinStout">Pumpkin Stout</div>
+								<div class="back" id="PumpkinStout"><img src="" alt=""></div>
+							</div>
+						</li>
 					</ul>
 				</div>
 								
 				<div class="first-then then">
 					<h2>...comes great <span class="emphasis">possibility</span>.</h2>
 					<ul class="card">
-						<li><div class="process-card" id="PBJs">PBJs</div></li>
-						<li><div class="process-card" id="Tacos">Tacos</div></li>
-						<li><div class="process-card" id="JellyRolls">Jelly Rolls</div></li>
-						<li><div class="process-card" id="Cheesetrays">Cheese trays</div></li>
-						<li><div class="process-card" id="Doughnuts">Doughnuts</div></li>
-						<li><div class="process-card" id="Burgers">Burgers</div></li>
-						<li><div class="process-card" id="PorkChops">Pork Chops</div></li>
-						<li><div class="process-card" id="IceCream">Ice Cream</div></li>
+						<li>
+							<div class="process-card front" id="PBJs">PBJs</div>
+							<div class="process-card back" id="PBJs">PBJs</div>
+						</li>
+						<li>
+							<div class="process-card front" id="Tacos">Tacos</div>
+							<div class="process-card back" id="Tacos">Tacos</div>
+						</li>
+						<li>
+							<div class="process-card front" id="JellyRolls">Jelly Rolls</div>
+							<div class="process-card back" id="JellyRolls">Jelly Rolls</div>
+						</li>
+						<li>
+							<div class="process-card front" id="Cheesetrays">Cheese trays</div>
+							<div class="process-card back" id="Cheesetrays">Cheese trays</div>
+						</li>
+						<li>
+							<div class="process-card front" id="Doughnuts">Doughnuts</div>
+							<div class="process-card back" id="Doughnuts">Doughnuts</div>
+						</li>
+						<li>
+							<div class="process-card front" id="Burgers">Burgers</div>
+							<div class="process-card back" id="Burgers">Burgers</div>
+						</li>
+						<li>
+							<div class="process-card front" id="PorkChops">Pork Chops</div>
+							<div class="process-card back" id="PorkChops">Pork Chops</div>
+						</li>
+						<li>
+							<div class="process-card front" id="IceCream">Ice Cream</div>
+							<div class="process-card back" id="IceCream">Ice Cream</div>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -226,6 +306,11 @@
 				<h2 style="text-align:center;"><span style="color:white;"> -- </span><a href="#intro"><span class="emphasis">Beer</span> up </a><span style="color:white;">|</span> <span class="emphasis">Jelly</span> on<span style="color:white;"> -- </span></h2>
 			</div>
 		</section>
+		<script>
+			$('.card').on('mouseenter mouseleave', function () {
+			  $('.process-card').toggleClass('flip');
+			});
+		</script>
 		<script>
 			var map = L.map('map', {
 			    center: [38.187240, -76.434317],
