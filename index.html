@@ -48,7 +48,7 @@
 			#products {
 				background: url(https://cloud.githubusercontent.com/assets/4176055/8398925/2a0ad83a-1dc8-11e5-8b71-e1182b8ac2c8.jpg) no-repeat center center fixed; 
 			}
-			#banner > img#logo {
+			#banner > div > img#logo {
 				margin-left: 30%;
 				margin-right: 30%;
 				margin-top: 100px;
@@ -56,9 +56,17 @@
 				height: 400px;
 				position: absolute;
 			}
-			#banner > div {
+			#banner > div > button {
+				margin-left: 30%;
+				margin-right: 30%;
+				margin-top: 500px;
 				width: 400px;
-				height: 400px;
+				height: 75px;
+				position: absolute;
+				font-size: 24px;
+				background: #FFCC01;
+				border: 0;
+				color: #5A7791;
 			}
 			.dropletter{
 				color: #FFCC01;
@@ -120,7 +128,7 @@
 			}
 			.content-b {
 				display:table-cell;
-			    position:relative;
+			  position:relative;
 				vertical-align:middle;
 				text-align:center;
 				vertical-align: center;
@@ -149,7 +157,10 @@
 			}
 		</style>
 		<section id="banner" class="fullscreen background parallax" data-img-width="1600" data-img-height="1064" data-diff="100">
-			<img id="logo" src="https://cloud.githubusercontent.com/assets/4176055/8398930/2a1519d0-1dc8-11e5-8576-d23adca52750.png" alt="Freethinkers Brewing">
+			<div class="cta">
+				<img id="logo" src="https://cloud.githubusercontent.com/assets/4176055/8398930/2a1519d0-1dc8-11e5-8576-d23adca52750.png" alt="Freethinkers Brewing">
+				<button><h3>Get that Jelly.</h3></button>
+			</div>
 		</section>
 		<section id="intro" class="fullscreen background parallax" data-img-width="1600" data-img-height="1064" data-diff="100">
 			<div class="content">
@@ -309,7 +320,7 @@
 				<p>Come find us and say hello. We're proudly county and support free samples.</p>
 				<p>We'll be selling at a <a href="https://hsmcdigshistory.org/BeerFest/events.html" target="_blank">local festival</a> or <a href="http://homegrownfarmmarket.webs.com/" target="_blank">farmers market</a> near you.</p>
 				<div id="map"></div>
-				<p>If you're outside our area, <a href="mailto:FreeThinkersBrew@gmail.com">let us know</a> your favorite flavors, awesome recipes, and where to send your six-pack.</p>
+				<p>If you're outside our area, <span class="dropletter"><a href="mailto:FreeThinkersBrew@gmail.com">let us know</a></span> your favorite flavors, awesome recipes, and where to send your six-pack.</p>
 				<p>We'll even throw in a free koozie.</p>
 				<h2 style="text-align:center;"><span style="color:white;"> -- </span><a href="#intro"><span class="emphasis">Beer</span> up </a><span style="color:white;">|</span> <span class="emphasis">Jelly</span> on<span style="color:white;"> -- </span></h2>
 			</div>
