@@ -1,4 +1,4 @@
-//modified from gulpfil.js in //https://github.com/planetoftheweb/responsive,
+//modified from gulpfile.js in //https://github.com/planetoftheweb/responsive,
 //the repo for the awesome lynda.com course 'Building a Responsive Single-Page Design,'
 //by Ray Villalobos, which is awesome.
 
