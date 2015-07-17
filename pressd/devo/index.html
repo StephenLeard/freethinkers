@@ -20,70 +20,123 @@
 			}
 		</style>
 		<header>
-			<article>
+			<article class="fullheight">
 				<div class="hgroup">
-					<a href="#intro"><img src="https://cloud.githubusercontent.com/assets/4176055/8398930/2a1519d0-1dc8-11e5-8576-d23adca52750.png" alt="Freethinkers Brewing"></a>
-					<button><h2>Get that Jelly.</h2></button>
+					<div class="brand">
+						<a href="#intro"><img src="https://cloud.githubusercontent.com/assets/4176055/8398930/2a1519d0-1dc8-11e5-8576-d23adca52750.png" alt="Freethinkers Brewing"></a>
+					</div>
+					<button><h2>Get Your Jelly.</h2></button>
 				</div>
 			</article>
+			<nav id="nav">
+				<div class="navbar">
+					<div class="brand"><a href=""><span>Freethinkers</span> Brewing</a></div>
+					<ul>
+						<li><a class='icon process' href="#process"><span>Process</span></a></li>
+						<li><a class='icon products' href="#products"><span>Products</span></a></li>
+						<li><a class='icon possibilities' href="#possibilities"><span>Possibilities</span></a></li>
+						<li><a class='icon contact' href="#contact"><span>Contact</span></a></li>
+					</ul>
+				</div>
+			</nav>
 		</header>
-		<nav id="nav">
-			<div class="navbar">
-				<div class="brand"><a href=""><span>Freethinkers</span> Brewing</a></div>
-				<ul>
-					<li>Process</li>
-					<li>Products</li>
-					<li>Possibilities</li>
-					<li>Contact</li>
-				</ul>
+		<main>
+			<div class="scene" id="intro">
+				<article class="content">
+					<header>
+						Freethinkers
+					</header> - those who form opinions on the basis of reason, independent of authority
+					Like two homebrewers pushing the limits of the craft beyond the medium itself.
+					Like Craft Beer Jelly
+				</article>
 			</div>
-		</nav>
-		Freethinkers - those who form opinions on the basis of reason, independent of authority
-		Like two homebrewers pushing the limits of the craft beyond the medium itself.
-		Like Craft Beer Jelly
-		
-		First we brew
-		hops
-		malt
-		yeast
-		water
-		
-		...then we jelly
-		pectin
-		sugar
-		citric
-		magic
-		
-		With great beer...
-		Chocolate PB Porter
-		Citra Amber Ale
-		West Coast Red Ale
-		Black IPA
-		Oatmeal Stout
-		Coffee Oatmeal Stout
-		Imperial IPA
-		Pumpkin Stout
 
-		...comes great possibility
-		PBJs
-		Tacos
-		Jelly Rolls
-		Cheese trays
-		Doughnuts
-		Burgers
-		Pork Chops
-		Ice Cream
+			<div class="scene" id="process">
+				<article class="content">
+					<div class="fullheight">
+						<header>
+							First we brew...
+						</header>
+						hops
+						malt
+						yeast
+						water
+					</div>
+					
+					<div class="fullheight">
+						<header>
+							...then we jelly
+						</header>
+						pectin
+						sugar
+						citric
+						magic
+					</div>
+				</article>
+			</div>
 
-		Curious? Of course you are.
-		Come find us and say hello. We're proudly county and support free samples.
-		We'll be selling at a local festival or farmers market near you.
-		
-		<div id="map"></div>
-		
-		If you're outside our area, let us know your favorite flavors, awesome recipes, and where to send your six-pack.
-		We'll even throw in a free koozie.
+			<div class="scene" id="products">
+				<article class="content">
+					<header>
+						With great beer...
+					</header>
+					Chocolate PB Porter
+					Citra Amber Ale
+					West Coast Red Ale
+					Black IPA
+					Oatmeal Stout
+					Coffee Oatmeal Stout
+					Imperial IPA
+					Pumpkin Stout
+				</article>
+			</div>
 
-		-- Beer up | Jelly on --
+			<div class="scene" id="possibilities">
+				<article class="content">
+					<header>
+						...comes great possibility
+					</header>
+					PBJs
+					Tacos
+					Jelly Rolls
+					Cheese trays
+					Doughnuts
+					Burgers
+					Pork Chops
+					Ice Cream
+				</article>
+			</div>
+
+			<div class="scene" id="contact">
+				<article class="content">
+					<header>
+						Curious? Of course you are.
+					</header>
+					Come find us and say hello. We're proudly county and support free samples.
+					We'll be selling at a local festival or farmers market near you.
+					
+					<div id="map"></div>
+					
+					If you're outside our area, <a href="mailto:FreeThinkersBrew@gmail.com">let us know</a> your favorite flavors, awesome recipes, and where to send your six-pack.
+					We'll even throw in a free koozie.
+				</article>
+			</div>
+		</main>
+		<footer class="scene">
+			<artcle class="content">
+				<div>
+					-- Beer up | Jelly on --
+				</div>
+				<div id="socialmedia">
+					<ul class="group">
+						<li><a href="https://www.youtube.com/"><img class="icon" src="" alt=""></a></li>
+						<li><a href="https://www.facebook.com/"><img class="icon" src="" alt=""></a></li>
+						<li><a href="https://www.pinterest.com/"><img class="icon" src="" alt=""></a></li>
+					</ul>
+				</div>
+			</artcle>
+
+		</footer>
 
 		<script>
 			var map = L.map('map', {
